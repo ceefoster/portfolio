@@ -1,0 +1,14 @@
+<html>
+<head>
+</head>
+<body>
+This is a test of finding a word and changing it.
+</body>
+<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+var $els = $(document.body); 
+$els.each(function(){ 
+$(this).html($(this).text().replace(/word/g, 'banana')); 
+});
+</script>
+</html>

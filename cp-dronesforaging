@@ -1,0 +1,118 @@
+http://www.core77designawards.com/2014/recipients/drones-foraging/
+
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--scale screens correctly-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "css/bootstrap.min.css" rel = "stylesheet">
+    <link href = "css/custom.css" rel = "stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,300italic,700|Dosis:400,700,300,200' rel='stylesheet' type='text/css'>
+<script src = "js/respond.min.js"></script>
+    <script src = "js/custom.js"></script>
+    <title>Caroline Foster's Portfolio</title>
+</head>
+
+<body>
+    <div class = "container">
+
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="sidebar-nav">
+
+              <div class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <span class="visible-xs navbar-brand">caroline foster</span>
+                </div>
+                <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                  <ul class="nav navbar-nav">
+                    <li><a href="index.html"><div class="name">Caroline Foster</div></a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div><!--/.nav-collapse -->
+              </div>
+            </div><!--/sidebar-nav -->
+          </div><!--/col-sm-3 -->
+
+          <div class="col-sm-9 main">
+<!--             <div class = "col-sm-9">
+ -->
+
+            <div class="col-sm-12 col-md-8">
+              <img src="img/dssg_pres.png" alt="ubicomp"  class="img-responsive" width="100%">
+
+              <h2 class="contentFirst">Summary</h2>
+              <p>I participated in the <a href="dssg-atl.io" target="_blank" class="copy">Data Science for Social Good</a> program at Georgia Tech, a 10-week summer program where teams tackle problems from the city and local nonprofits. I was part of a three-person team - the other two members were Computer Science students. Our project was to assist non-profit Trees Atlanta and the Atlanta Tree Conservation Commission as they work to preserve Atlanta’s urban tree canopy. Specifically, our task was to help them through available data. Working closely with representatives from the organizations, we developed three applications to make their work easier and more efficient.</p>
+
+              <p>Our final deliverable can be viewed on its website <a href="http://dssgtrees.gatech.edu/" target="_blank" class="copy">here.</a></p>
+
+              <h2 class="content">Process</h2>
+               <p>We started by researching the problem space, which included remote sensing, tree maintenance at a city level, urban tree canopy, and benefits of trees. We talked with our partners, one from the City of Atlanta’s Tree Conservation Commission, who is responsible for tree management and policymaking, and the other from Trees Atlanta, who is responsible for locating areas to plant trees as contracted by City of Atlanta. We also joined the member of Trees Atlanta during a scouting trip out in the city. By interviewing and observing our partners, we learned that they have a lot of various needs. Given the time frame and scope of our project, we identified three specific problems to solve.</p>
+
+               <p>Throughout our process, we communicated with our partners through weekly meetings. These involved discussions about the structure and content of the data, our current solution ideas and testing of the current iterations. A midterm project presentation helped guide our process. As with many data-based projects, we spent a large chunk of time on data wrangling - combining relevant datasets in ArcGIS, formatting, etc. This left little time for application design, so we rapidly iterated over working solutions. We spent the last week on documentation, in hopes that future teams will be able to continue work on design detail and usability analyses. <p>
+
+               <img src="img/dssg_midterm.jpg" alt="ubicomp"  class="img-responsive" width="100%"> 
+
+
+              <h2 class="content">Problem and Solution 1</h2>
+              <p><span class="bold">Problem:</span> Current records of trees planted by Trees Atlanta existed as a spreadsheet and part of a basic database. The records included information like genus, species, location, and year planted. This information was only in list format, which provided no physical reference and was not a presentable format for the public. </p>
+              <p><span class="bold">Solution:</span> To give Trees Atlanta a visual way to explore and present their data, a record of their work, we decided to develop an interactive, web-based map using Leaflet and D3. With this solution, the location-based data can be appropriately viewed geographically, and be used in presentations.</p>
+
+              <img src="img/dssg_sol1.png" alt="ubicomp"  class="img-responsive" width="100%">
+
+              <h2 class="content">Problem and Solution 2</h2>
+              <p><span class="bold">Problem:</span> One of the problems we identified during our conversations is the process by which Trees Atlanta finds new locations to plant trees, to fulfill contract work by the City of Atlanta. The current process for finding locations is centered around individual knowledge and semi-random driving around the city looking for locations.</p>
+              <p><span class="bold">Solution:</span> To optimize this process, as well as provide information to the unexperienced, we designed and developed an interactive map of Atlanta broken down by property parcels. The user can prioritize the parcels to see which ones might have more space and need for new tree plantings, thus guiding their scouting process in the field. </p>
+
+              <img src="img/dssg_prio.png" alt="ubicomp"  class="img-responsive" width="100%">
+
+              <h2 class="content">Problem and Solution 3</h2>
+              <p><span class="bold">Problem:</span> Another need we addressed centered around the Tree Conservation Commission’s responsibility for conserving large tracts of forest. They wanted to know not only where large areas of forest exist in the city, but also related information like property type, owner, value, and tree cover percentage.</p>
+              <p><span class="bold">Solution:</span> Similar to our previous solution, we designed and developed an interactive map where the user can view contiguous tracts of forest and which parcels they are made up of, with all of the relevant information. </p>
+
+              <img src="img/dssg_ctg.png" alt="ubicomp"  class="img-responsive" width="100%">   
+
+              <h2 class="content">Project Conclusion</h2>
+              <p>This project was especially satisfying because I felt like I was able to directly improve the city by working with a council and a non-profit. These organizations have a better understanding of how data can help them, and have tools that they can use in their daily work. It is also one of my favorite projects because I learned about the impact of both data and trees. I gained a wider understanding of data and data-based decision making, as well as an appreciation for how much work and time goes into maintaining an urban tree canopy. Our project was covered by a few news sources, including <a href="http://wabe.org/post/ga-tech-data-science-interns-develop-app-planting-trees" target="_blank" class="copy">NPR</a>. We wrote a short paper for <a href="www.bloomberg.com/company/d4gx/" target="_blank" class="copy">Data for Good</a> by Bloomberg, which was accepted. The final presentations for the internship program were held at <a href="https://generalassemb.ly/education/data-science-for-social-good" target="_blank" class="copy"> General Assembly</a> in Atlanta. I and one other team member attended the workshop at Bloomberg’s headquarters in New York City.</p>
+
+              <img src="img/dssg_ga.jpg" alt="ubicomp"  class="img-responsive" width="100%"> 
+
+              <h2 class="content">Media Coverage</h2>
+              <p><a href="http://wabe.org/post/ga-tech-data-science-interns-develop-app-planting-trees" target="_blank" class="copy">NPR</a></p>
+              <p><a href="http://www.news.gatech.edu/2015/07/07/students-use-data-science-solve-society%E2%80%99s-problems" target="_blank" class="copy">Georgia Tech News</a></p>
+              <p><a href="http://www.cc.gatech.edu/when-computing-equals-social-good" target="_blank" class="copy">College of Computing News</a></p>
+              <div class="col-sm-12 col-md-12 col-xs-offset-10"><a href="internship-1.html" class="BTP" class="copy">Back to Top</a></div>
+
+            </div>
+
+          </div>
+        </div>
+        <footer>&#169 2013-2015 Caroline Foster</footer>
+
+
+<!--             </div><!--/col-sm-9 work 
+ -->          </div><!--/col-sm-9-->
+
+        </div><!--/row-->
+
+    </div><!--close container div-->
+
+
+    <!--Javascript, at bottom so page loads faster-->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script> 
+    <!--dependent on jquery, so put jquery link first --> 
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

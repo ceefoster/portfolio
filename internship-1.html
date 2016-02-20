@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--scale screens correctly-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "css/bootstrap.min.css" rel = "stylesheet">
+    <link href = "css/custom.css" rel = "stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,300italic,700|Dosis:400,700,300,200|Open+Sans:300,700,300italic' rel='stylesheet' type='text/css'>
+    <script src = "js/respond.min.js"></script>
+    <script src = "js/custom.js"></script>
+    <title>Caroline Foster's Portfolio</title>
+</head>
+
+<body>
+    <div class = "container">
+
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="sidebar-nav">
+
+              <div class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <span class="visible-xs navbar-brand">caroline foster</span>
+                </div>
+                <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                  <ul class="nav navbar-nav">
+                    <li><a href="index.html"><div class="name">Caroline Foster</div><span class="subname">researcher, designer</span></a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                  </ul>
+                </div><!--/.nav-collapse -->
+              </div>
+            </div><!--/sidebar-nav -->
+          </div><!--/col-sm-3 -->
+
+          <div class="col-sm-9 main">
+<!--             <div class = "col-sm-9">
+ -->
+
+            <div class="col-sm-12 col-md-8">
+              <img src="img/dssg_pres.png" alt="ubicomp"  class="img-responsive" width="100%">
+
+              <h2 class="contentFirst">Summary</h2>
+              <p>I participated in the <a href="dssg-atl.io" target="_blank" class="copy">Data Science for Social Good</a> program at Georgia Tech, a 10-week summer program where teams tackle problems from the city and local nonprofits. I was part of a three-person team - the other two members were Computer Science students. Our project was to assist non-profit Trees Atlanta and the Atlanta Tree Conservation Commission as they work to preserve Atlanta’s urban tree canopy. Specifically, our task was to help them through available data. Working closely with representatives from the organizations, we developed three applications to make their work easier and more efficient.</p>
+
+              <p><span class="emph">My role: </span> ArcGIS data wrangler and mapmaker, informal UI designer, project page designer and developer, overall team member: meeting with clients, researching the problem space</p>
+
+              <p>Our final deliverable can be viewed on its website <a href="http://dssgtrees.gatech.edu/" target="_blank" class="copy">here.</a></p>
+
+
+              <h2 class="content">Process</h2>
+               <p>We started by researching the problem space, which included remote sensing, tree maintenance at a city level, urban tree canopy, and benefits of trees. We talked with our partners, one from the City of Atlanta’s Tree Conservation Commission, who is responsible for tree management and policymaking, and the other from Trees Atlanta, who is responsible for locating areas to plant trees as contracted by City of Atlanta. We also joined the member of Trees Atlanta during a scouting trip out in the city. By interviewing and observing our partners, we learned that they have a lot of various needs. Given the time frame and scope of our project, we identified three specific problems to solve.</p>
+<!--                <blockquote><p>"By interviewing and observing our partners, we learned that they have a lot of various needs."</p></blockquote> -->
+
+               <p>Throughout our process, we communicated with our partners through weekly meetings. These involved discussions about the structure and content of the data, our current solution ideas and testing of the current iterations. A midterm project presentation helped guide our process. As with many data-based projects, we spent a large chunk of time on data wrangling - combining relevant datasets in ArcGIS, formatting, etc. This left little time for application design, so we rapidly iterated over working solutions. We spent the last week on documentation, in hopes that future teams will be able to continue work on design detail and usability analyses. <p>
+
+               <img src="img/dssg_midterm.jpg" alt="ubicomp"  class="img-responsive" width="100%"> 
+
+
+              <h2 class="content">Problem and Solution 1</h2>
+              <p><span class="emph">Problem:</span> Current records of trees planted by Trees Atlanta existed as a spreadsheet and part of a basic database. The records included information like genus, species, location, and year planted. This information was only in list format, which provided no physical reference and was not a presentable format for the public. </p>
+              <p><span class="emph">Solution:</span> To give Trees Atlanta a visual way to explore and present their data, a record of their work, we decided to develop an interactive, web-based map using Leaflet and D3. With this solution, the location-based data can be appropriately viewed geographically, and be used in presentations.</p>
+
+              <img src="img/dssg_sol1.png" alt="ubicomp"  class="img-responsive" width="100%">
+
+              <h2 class="content">Problem and Solution 2</h2>
+              <p><span class="emph">Problem:</span> One of the problems we identified during our conversations is the process by which Trees Atlanta finds new locations to plant trees, to fulfill contract work by the City of Atlanta. The current process for finding locations is centered around individual knowledge and semi-random driving around the city looking for locations.</p>
+              <p><span class="emph">Solution:</span> To optimize this process, as well as provide information to the unexperienced, we designed and developed an interactive map of Atlanta broken down by property parcels. I led the work on the user interaction. The user can prioritize the parcels to see which ones might have more space and need for new tree plantings, thus guiding their scouting process in the field. </p>
+              <p><span class="emph">Challenge:</span> The biggest challenge in designing the user interface was helping the user understand that they can change the prioritization model based on three factors: temperature, urban tree canopy, and impervious surfaces. The color of the parcels change based on the numbers in the model. To enable the user to do this, we created sliders. For example, if the slider is all the way on the left for the Urban Tree Canopy weight, then the model prioritizes parcels with a low urban tree canopy.</p>
+
+              <!--data interval = "false" stops it from automatically cycling through-->
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="img/dssg_prio_FINAL.png" alt="...">
+                    <div class="carousel-caption">
+                      <span class="emph">Our final product: </span>Important design decisions are the main right control panel, with the "How to use this application" feature and labels for each slider. 
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="img/dssg_slider4.png" alt="...">
+                    <div class="carousel-caption">
+                      <span class="emph">Sketches: </span>To start, I sketched various possibilities before my team member worked on the code. We started with labels for each slider and discussed vocabulary like "more" and "higher".
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="img/dssg_slider1.png" alt="...">
+                    <div class="carousel-caption">
+                      <span class="emph">Decision: </span>We decided to have “Low is important” and “High is important” labels only at the top to avoid clutter. I thought of having a checkbox to make the variable active (in the model) or inactive (removed from the model). 
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="img/dssg_prio.png" alt="...">
+                    <div class="carousel-caption">
+                      <span class="emph">User feedback: </span>We presented this to our partners. They were confused about the sliders, and didn't relate the labels at the top to all of the sliders. We went back to the drawing table and reevaluated. 
+                    </div>
+                  </div> 
+                  <div class="item">
+                    <img src="img/dssg_finalslider2.png" alt="...">
+                    <div class="carousel-caption">
+                      <span class="emph">Modifications: </span>An example of our final slider, one of three. We added descriptive labels to each slider based on feedback. Our partners also said that once someone knew how to use it, they wouldn't want to see the "How to" text everytime. We incorporated this into a drop-down menu link, as shown on the first slide in the final version.
+                    </div>
+                  </div> 
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div> <!--close carousel-->                     
+
+              <h2 class="content">Problem and Solution 3</h2>
+              <p><span class="emph">Problem:</span> Another need we addressed centered around the Tree Conservation Commission’s responsibility for conserving large tracts of forest. They wanted to know not only where large areas of forest exist in the city, but also related information like property type, owner, value, and tree cover percentage.</p>
+              <p><span class="emph">Solution:</span> Similar to our previous solution, we designed and developed an interactive map where the user can view contiguous tracts of forest and which parcels they are made up of, with all of the relevant information. </p>
+
+              <img src="img/dssg_ctg.png" alt="ubicomp"  class="img-responsive" width="100%">   
+
+              <h2 class="content">Project Conclusion</h2>
+              <p>This project was especially satisfying because I felt like I was able to directly improve the city by working with a council and a non-profit. These organizations have a better understanding of how data can help them, and have tools that they can use in their daily work. It is also one of my favorite projects because I learned about the impact of both data and trees.</p>
+<!-- 
+              <p class="pullquote"><span class="quote">"</span> I gained a wider understanding of data and data-based decision making"</p> -->
+
+              <p>I gained a wider understanding of data and data-based decision making, as well as an appreciation for how much work and time goes into maintaining an urban tree canopy. Our project was covered by a few news sources, including <a href="http://wabe.org/post/ga-tech-data-science-interns-develop-app-planting-trees" target="_blank" class="copy">NPR</a>. We wrote a short paper for <a href="www.bloomberg.com/company/d4gx/" target="_blank" class="copy">Data for Good</a> by Bloomberg, which was accepted. The final presentations for the internship program were held at <a href="https://generalassemb.ly/education/data-science-for-social-good" target="_blank" class="copy"> General Assembly</a> in Atlanta. I and one other team member attended the workshop at Bloomberg’s headquarters in New York City.</p>
+
+              <img src="img/dssg_ga.jpg" alt="ubicomp"  class="img-responsive" width="100%"> 
+
+              <h2 class="content">Media Coverage</h2>
+              <p><a href="http://wabe.org/post/ga-tech-data-science-interns-develop-app-planting-trees" target="_blank" class="copy">NPR</a></p>
+              <p><a href="http://www.news.gatech.edu/2015/07/07/students-use-data-science-solve-society%E2%80%99s-problems" target="_blank" class="copy">Georgia Tech News</a></p>
+              <p><a href="http://www.cc.gatech.edu/when-computing-equals-social-good" target="_blank" class="copy">College of Computing News</a></p>
+              <div class="col-sm-12 col-md-12 col-xs-offset-10"><a href="internship-1.html" class="BTP" class="copy">Back to Top</a></div>
+
+            </div>
+
+          </div>
+        </div>
+        <footer>&#169 2013-2015 Caroline Foster</footer>
+
+
+<!--             </div><!--/col-sm-9 work 
+ -->          </div><!--/col-sm-9-->
+
+        </div><!--/row-->
+
+    </div><!--close container div-->
+
+
+    <!--Javascript, at bottom so page loads faster-->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script> 
+    <!--dependent on jquery, so put jquery link first --> 
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--included for carousel-->
+    <script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.elastislide.js"></script>
+    <script type="text/javascript" src="js/gallery.js"></script>
+
+</body>
+</html>

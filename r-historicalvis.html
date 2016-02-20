@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--scale screens correctly-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "css/bootstrap.min.css" rel = "stylesheet">
+    <link href = "css/custom.css" rel = "stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,300italic,700|Dosis:400,700,300,200|Open+Sans:300,700,300italic' rel='stylesheet' type='text/css'>
+    <script src = "js/respond.min.js"></script>
+    <script src = "js/custom.js"></script>
+    <title>Caroline Foster's Portfolio</title>
+</head>
+<body>
+    <div class = "container">
+
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="sidebar-nav">
+
+              <div class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <span class="visible-xs navbar-brand">caroline foster</span>
+                </div>
+                <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                  <ul class="nav navbar-nav">
+                    <li><a href="index.html"><div class="name">Caroline Foster</div><span class="subname">researcher, designer</span></a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                  </ul>
+                </div><!--/.nav-collapse -->
+              </div>
+            </div><!--/sidebar-nav -->
+          </div><!--/col-sm-3 -->
+
+          <div class="col-sm-9 main">
+<!--             <div class = "col-sm-9">
+ -->
+
+            <div class="col-sm-12 col-md-8">
+              <img src="img/DH_main.png" alt="DigitalHumanities"  class="img-responsive alone" width="100%">
+
+              <h2 class="contentFirst">Summary</h2>
+              <p>As a Graduate Research Assistant, I am working with Professor Lauren Klein and a Digital Media student to explore historical visualizations with modern technologies. One of our projects, about four months in duration, focused on William Playfair’s difference charts. We recreated this using d3.js to understand both the past and the present, how data is interpreted, and the idea of repair in digital media. This process resulted in two visualizations, one interactive and one static, and a paper which we submitted to <a href="http://dh2016.adho.org/" target="_blank" class="copy"> Digital Humanities</a>, a European-based conference. In particular, I worked on the static map and while we all worked on the paper. </p>
+
+              <p>The full paper can be read <a href="RepairingWilliamPlayfair_Foster_Pramer_Klein.pdf" target="_blank" class="copy">here</a>.</p>
+
+              <h2 class="content">Playfair</h2>
+               <p>The biggest challenge I encountered while creating the static map was differentiating between existing data from William Playfair and data that I had to interpret. Ultimately I ended up using a technique described by <a href="kevin.schaul.io/2013/07/06/undefined-data-in-d3-charts/" target="_blank" class="copy">Kevin Schaul.</a> </p>
+
+               <img src="img/historicalvis_playfair.png" alt="ubicomp"  class="img-responsive" width="100%"> 
+
+
+              <h2 class="content">Upcoming Work</h2>
+              <p>Upcoming projects include digitizing and making interactive Elizabeth Peabody’s historical event chart, as well as other projects with d3. </p>
+
+
+            </div>
+
+          </div>
+        </div>
+        <footer>&#169 2013-2015 Caroline Foster</footer>
+
+
+<!--             </div><!--/col-sm-9 work 
+ -->          </div><!--/col-sm-9-->
+
+        </div><!--/row-->
+
+    </div><!--close container div-->
+
+
+    <!--Javascript, at bottom so page loads faster-->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script> 
+    <!--dependent on jquery, so put jquery link first --> 
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,437 @@
+html, body{
+  height:100%;
+}
+
+body{
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+}
+
+footer{
+  margin-top:25%;
+  font-size: small;
+  border-top: 1px solid #f5f5f5;
+  padding-top: 1%;
+}
+
+p{
+
+}
+
+img.alone{
+  padding-top:5%;
+  padding-bottom: 2%;
+}
+
+img.me{
+    padding-top:12%;
+
+}
+
+.pullquote{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: larger;
+  font-style: italic;
+/*  background:
+        url(images/bg-quote3a.png) top center no-repeat,*/
+}
+
+.quote{
+  font-size: 200%;
+  color:pink;
+  font-family: "Dosis", sans-serif;
+
+}
+
+.highlight{
+  background-color: yellow;
+}
+
+
+/*.slider-size {
+height: 300px;  This is your slider height 
+width: auto;
+}*/
+/*.carousel {
+width:100%; 
+margin:0 auto;  center your carousel if other than 100%  
+}*/
+
+
+
+
+
+/*remove gradient from bootstrap carousel*/
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    top: -100px;
+}
+
+
+
+/*if white bg*/
+/*.carousel-indicators li{
+  background-color:white;
+  border-color:black;
+}
+.carousel-indicators .active{
+  background-color:black;
+  border-color: white;
+}*/
+/*/if white bg*/
+
+/*make caption appear beneath carousel, font styling*/
+.carousel-caption{
+  position: relative;
+  left: auto;
+  right: auto;
+  font-family: "Source Sans Pro", sans-serif;
+  color:black;
+  text-shadow: none;
+  text-align: left;
+/*  background-color: black;
+  color:white;*/
+  padding-top: 5%;
+/*  padding-left: 5%;*/
+  padding-right: 5%;
+  font-size: smaller;
+}
+
+.carousel-indicators{
+  top: 295px;
+  
+
+/*  top:70%;
+*/}
+
+.carousel-indicators.taller{
+  top:385px;
+}
+
+.carousel-indicators.vertical{
+  top:405px;
+}
+
+.item.vertical {
+  height: 550px;
+}
+
+.item.vertical img {
+  max-height: 100%;  
+  max-width: 100%; 
+/*  position: absolute;  //not sure what this does, remove to get text below image in vertical carousel 
+*/  top: 0;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  margin: auto;
+}
+/*
+.me{
+  padding-top: 50%;
+}*/
+
+#carousel-example-generic, #carousel-example-generic-3{
+  margin-top: 5%;
+}
+
+.container{
+	margin-top: 5%;
+  margin-bottom: 1%;
+
+/*  min-height: 100%;
+  overflow: hidden;*/
+}
+
+
+/*style index.html page*/
+.main{
+  margin-top: 0%;
+}
+
+h2.content{
+    font-family:"Dosis", sans-serif;
+    font-weight: lighter;
+/*    margin-top: 10%;
+*/}
+
+h2.contentFirst{
+    font-family:"Dosis", sans-serif;
+    font-weight: lighter;
+}
+
+.work h2{
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0%;
+}
+
+.bold{
+ text-decoration: underline;
+}
+
+.emph{
+  font-weight: 700;
+}
+
+
+
+.work{
+  margin-bottom: 3%;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.work img{
+  margin-bottom: 5%;
+}
+
+#updating{
+  font-style: italic;
+  font-color: gray;
+  font-size: smaller;
+  padding-top: 5%;
+}
+
+.dssg-list{
+  list-style-type: none;
+}
+
+.backto{
+  text-align: right;
+}
+
+/*.bottom{
+  vertical-align: text-bottom;
+
+}*/
+.pull-bottom{
+  display:inline-block;
+  vertical-align: bottom;
+  float:none;
+}
+
+.pull-top{
+  display:inline-block;
+  vertical-align: top;
+  float:none;
+}
+
+
+
+/*
+.row.workpiece .col-sm-4{
+  vertical-align: text-bottom;
+  background-color:purple;
+}
+*/
+
+
+/*styling for resume page*/
+.row .resume{
+  padding-top: 3%;
+}
+
+.btnPDF{
+  padding-bottom: 3%;
+}
+
+.resume2{
+  padding-bottom: 3%;
+}
+
+p.posititle{
+  font-weight: bold;
+}
+
+/*.nav-pills li{
+  color: black;
+}*/
+
+a.copy{
+/*  color: black;
+  text-decoration: underline;*/
+}
+
+a:hover{
+  color:black;
+}
+
+/*project nav*/
+.nav.nav-pills{
+  margin-top: 2%;
+  margin-bottom: 5%;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+
+/*  font-family: "Dosis", sans-serif;
+*/}
+
+
+/*project nav: selected pill*/
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus {
+
+  background-color: darkgray;
+  color:white;
+}
+
+
+li.selected{
+  color:black;
+}
+
+/*project nav: hovered pill*/
+.nav-pills > li.active > a:hover {
+/*  color: black;
+*/  background-color: lightgray;
+
+}
+
+.nav-pills > li > a{
+  background-color: white;
+  color:gray;
+}
+
+/*style name*/
+.name{
+  color: black;
+/*  font-weight: lighter;
+*/  font-size: larger;
+}
+
+.subname{
+  font-size: smaller;
+/*  padding:1%;
+  border-bottom: 1px solid #f5f5f5;*/
+}
+
+.tags{
+  font-style: italic;
+}
+
+/*sidebar nav*/
+.sidebar-nav{
+/*  background-color: blue;
+*/  margin-top: 3%; /*to make right content line up*/
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+  color:black;
+}
+
+/*changes font links non-active*/
+.navbar-default .navbar-nav>li>a{
+
+}
+
+.navbar-default .navbar-nav>li>a:active{
+/*  color:blue;
+*/}
+
+
+/**NONE OF THIS IS WORKING**/
+.sidebar-nav .navbar .navbar-default .navbar-header{
+/*  background-color: pink;
+*/
+}
+
+.navbar-header{
+/*  background-color: pink;
+*/}
+
+.nav .navbar-nav{
+/*  background-color: pink;
+*/}
+
+.navbar-nav > li.active > a{
+/*  color:blue;
+*/}
+
+.navbar-default .navbar-nav > li.active > a, .navbar-default .navbar-nav > li.active > a:focus{
+/*  color:pink;
+*/}
+/**!!!!!!!**/
+
+/*keeps the navbar links in one column*/
+.navbar-default .navbar-nav li{
+  display: inline;
+  float: none;
+}
+
+
+
+@media (min-width: 768px) {
+
+  /*entire navbar box*/
+  .navbar.navbar-default {
+    background: transparent;
+    border: none;
+    border-right: 1px solid #f5f5f5;
+  }
+
+
+.text-custom{
+  float: bottom;
+}
+
+.contentlist{
+  list-style: circle;
+}
+
+
+  /*styles your name in the navbar*/
+/*  .navbar.navbar-default .navbar-nav .name{
+    background-color: transparent;
+  }*/
+
+  /*styles the non-active navbar buttons*/
+/*  .navbar-default .navbar-nav{
+    background-color: transparent;
+  }
+
+  .navbar-default .navbar-nav .active{
+    font-color:black;
+  }
+*/
+  /*styles the navbar buttons on hover*/
+/*  .navbar-default .navbar-nav > li > a:hover{
+    background-color: blue;
+  }
+*/
+/*  .navbar-default .navbar-nav .open .dropdown-toggle>li>a:focus {
+      background-color: blue;
+  }*/
+
+/*  .navbar-default .navbar-nav .open .dropdown-toggle{
+    background-color: blue;
+  }
+*/
+  /*this line expands the dropdown menu instead of popping it out*/
+/*  .navbar-default .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }*/
+  /*styles the navbar buttons within the dropdown menu*/
+/*  .navbar-default .navbar-nav .open .dropdown-menu .dropdown-header,
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    padding: 5px 15px 5px 25px;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    line-height: 20px;
+
+  }*/
+  /*styles the SELECTED navbar buttons within the dropdown menu*/
+/*  .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus,
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+    background-image: none;
+    background-color: transparent;
+}*/
+
+}
